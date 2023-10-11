@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Segreto del Successo di Lorenzo</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #feedback { color: red; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Il Segreto del Successo di Lorenzo</h1>
+    <p>Scopri come Lorenzo è diventato un grande imprenditore!</p>
+    <p>Domanda: Chi è stato il maestro segreto di Lorenzo?</p>
+    <button onclick="revealSecret('Nessuno')">Nessuno. Lorenzo è autodidatta.</button>
+    <button onclick="revealSecret('Bill Gates')">Bill Gates.</button>
+    <button onclick="revealSecret('Marco Micozzi')">Marco Micozzi.</button>
+    <button onclick="revealSecret('Elon Musk')">Elon Musk.</button>
+    <p id="feedback"></p>
+
+    <script>
+        function revealSecret(answer) {
+            if (answer === 'Marco Micozzi') {
+                document.getElementById("feedback").innerHTML = "Esatto! Il segreto del successo di Lorenzo è Marco Micozzi, il suo maestro nell'ombra!";
+            } else {
+                document.getElementById("feedback").innerHTML = "Sbagliato! Riprova. Ricorda, ogni grande studente ha un grande maestro.";
+            }
+        }
+    </script>
+</body>
+</html>
